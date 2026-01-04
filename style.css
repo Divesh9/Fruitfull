@@ -380,7 +380,7 @@ body {
 
 .offer-modal-content {
   background: #fff;
-  margin: 8% auto;
+  margin: 80% auto;
   padding: 15px;
   width: 90%;
   max-width: 500px;
@@ -425,6 +425,13 @@ body {
 #offer-icon img {
   width: 100px;
   height: 100px;
+}
+
+.offer-modal-content img {
+  width: 100%;
+  max-height: 70vh; /* prevents overflow on mobile */
+  object-fit: contain;
+  border-radius: 6px;
 }
 
 
