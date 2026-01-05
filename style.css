@@ -377,16 +377,19 @@ body {
   height: 100%;
   background: rgba(0, 0, 0, 0.6);
 }
-
+.offer-modal {
+  overflow-y: auto;
+}
 .offer-modal-content {
   background: #fff;
-  margin: 80% auto;
+  margin: 5% auto;   /* Desktop view */
   padding: 15px;
   width: 90%;
   max-width: 500px;
   border-radius: 8px;
   text-align: center;
   position: relative;
+}
 }
 
 .offer-modal-content img {
@@ -432,6 +435,12 @@ body {
   max-height: 70vh; /* prevents overflow on mobile */
   object-fit: contain;
   border-radius: 6px;
+}
+
+@media (max-width: 768px) {
+  .offer-modal-content {
+    margin: 90px auto; /* Mobile navbar spacing */
+  }
 }
 
 
