@@ -326,6 +326,19 @@ body {
     border-top: none;
 }
 
+/*----------------------------------------------*/
+.banner-section {
+    background-image: url('./img/Backgroung_Product.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}
+
+.bg-overlay {
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+}
 
 
 
