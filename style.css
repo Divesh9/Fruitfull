@@ -340,5 +340,14 @@ body {
     border-radius: 10px;
 }
 
+.pagination {
+    margin: 0;
+    gap: 0;
+}
+
+.pagination .page-item {
+    margin: 0;
+}
+
 
 

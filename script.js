@@ -26,3 +26,21 @@ window.addEventListener("click", (e) => {
     offerModal.style.display = "none";
   }
 });
+
+//Page function
+
+function showPage(pageNumber) {
+
+    document.querySelectorAll('.product-page').forEach(page => {
+        page.style.display = 'none';
+    });
+
+    document.getElementById('page' + pageNumber).style.display = 'block';
+
+    document.querySelectorAll('.pagination .page-item').forEach(item => {
+        item.classList.remove('active');
+    });
+
+    document.querySelectorAll('.pagination .page-item')[pageNumber - 1]
+        .classList.add('active');
+}
